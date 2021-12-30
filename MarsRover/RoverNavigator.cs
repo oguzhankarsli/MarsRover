@@ -52,7 +52,9 @@ namespace MarsRover
             switch (rover.Face)
             {
                 case Face.N:
-                    rover.YCoordinate += 1;
+                    if (rover.YCoordinate < UpperCoordinate) {
+                        rover.YCoordinate += 1;
+                    }
                     break;
                 case Face.W:
                     rover.XCoordinate -= 1;
@@ -61,7 +63,11 @@ namespace MarsRover
                     rover.YCoordinate -= 1;
                     break;
                 case Face.E:
-                    rover.XCoordinate += 1;
+                    if (rover.XCoordinate < UpperCoordinate)
+                    {
+                        rover.XCoordinate += 1;
+                    }
+                    
                     
                     break;
                 default:
