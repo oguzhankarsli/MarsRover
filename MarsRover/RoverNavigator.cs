@@ -63,7 +63,7 @@ namespace MarsRover
                     rover.YCoordinate -= 1;
                     break;
                 case Face.E:
-                    if (rover.XCoordinate < UpperCoordinate)
+                    if (rover.XCoordinate < RightCoordinate)
                     {
                         rover.XCoordinate += 1;
                     }
